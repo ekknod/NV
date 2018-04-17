@@ -9,7 +9,7 @@ namespace nv { namespace math {
     static void __SinCos(float radians, float *sine, float *cosine)
     {
         *sine = (float)sin(radians);
-		*cosine = (float)cos(radians);
+        *cosine = (float)cos(radians);
     }
 
     static void __AngleVectors(const vec3 &angles, vec3 *forward)
