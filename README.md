@@ -2,7 +2,7 @@
 small sensitivity adjuster
 
 # HOTKEY
-mouse5 is slowing down your sensitivity,  
+mouse5 is slowing down your ingame sensitivity,  
 when you're aiming at the targetplayer upperbody
 
 # Story behind the NV project
