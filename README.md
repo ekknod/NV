@@ -8,7 +8,7 @@ when you're aiming at the targetplayer upperbody
 # Story behind the NV project
 i rewritten old project, with a different and minimal feature. 
 
-private one was undetected in faceit and eac atleast,  
+old private project was undetected in faceit and eac atleast,  
 this should be also if faceit is not checking the sensitivity convar
 
 # Compile and installation
