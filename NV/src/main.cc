@@ -7,7 +7,7 @@
 //
 unsigned int __declspec(dllexport) GetStereoApi()
 {
-	return 1;
+    return 1;
 }
 
 //
