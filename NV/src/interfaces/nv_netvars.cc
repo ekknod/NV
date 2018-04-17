@@ -14,7 +14,7 @@ namespace windows {
 namespace netvars {
     
     struct recv_prop {
-        char                *var_name;
+	char                *var_name;
 	int                 recv_type;
 	int                 flags;
 	int                 string_buffer_size;
