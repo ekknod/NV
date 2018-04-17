@@ -5,7 +5,8 @@ small sensitivity adjuster
 mouse5 is slowing down your sensitivity in the target player
 
 # Story behind the NV project
-i rewritten old project, with a different feature than a private one had.  
+i rewritten old project, with a different and minimal feature. 
+
 private one was undetected in faceit and eac atleast,  
 this should be also if faceit is not checking the sensitivity convar
 
