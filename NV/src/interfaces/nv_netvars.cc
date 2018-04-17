@@ -14,30 +14,30 @@ namespace windows {
 namespace netvars {
     
     struct recv_prop {
-	char                *var_name;
-	int                 recv_type;
-	int                 flags;
-	int                 string_buffer_size;
-	bool                bInsideArray;
-	const void          *extra_data;
-	struct recv_prop    *array_prop;
-	void                *array_length_proxy;
-	void                *proxy_fn;
-	void                *data_table_proxy_fn;
-	struct recv_table   *data_table;
-	int                 offset;
-	int                 element_stride;
-	int                 elements;
-	const char          *parent_array_prop_name;
+        char                *var_name;
+        int                 recv_type;
+        int                 flags;
+        int                 string_buffer_size;
+        bool                bInsideArray;
+        const void          *extra_data;
+        struct recv_prop    *array_prop;
+        void                *array_length_proxy;
+        void                *proxy_fn;
+        void                *data_table_proxy_fn;
+        struct recv_table   *data_table;
+        int                 offset;
+        int                 element_stride;
+        int                 elements;
+        const char          *parent_array_prop_name;
     };
 
     struct recv_table {
         struct recv_prop    *props;
-	int                 props_count;
-	void                *decoder;
-	char                *name;
-	bool                bInitialized;
-	bool                bInMainList;
+        int                 props_count;
+        void                *decoder;
+        char                *name;
+        bool                bInitialized;
+        bool                bInMainList;
     };
 
     struct client_class {
