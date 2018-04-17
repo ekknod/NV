@@ -219,7 +219,7 @@ namespace interfaces {
         struct interface_registry *next;
     };
 
-    void *__Open(const char *dll)
+    static void *__Open(const char *dll)
     {
         void *a;
         char buffer[260];
@@ -234,7 +234,7 @@ namespace interfaces {
         return a != 0 ? **(void***)(((((ULONG)a + 5) + *(ULONG*)((ULONG)a + 5)) + 4) + 6) : 0;
     }
     
-    void *__Get(void *registry, const char *name)
+    static void *__Get(void *registry, const char *name)
     {
         struct interface_registry *i;
 
