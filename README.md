@@ -6,10 +6,12 @@ mouse5 is slowing down your ingame sensitivity,
 when you're aiming at the targetplayer upperbody
 
 # Story behind the NV project
-i rewritten old project, with a different and minimal feature. 
+i rewritten old project, with a different and minimal feature.
 
-old private project was undetected in faceit and eac atleast,  
-this should be also if faceit is not checking the sensitivity convar
+# AC
+ FACEIT CLIENT  
+ VAC  
+ EAC
 
 # Compile and installation
 - compile the project in latest visual studio, then rename the dll to "nvStereoApiI.dll"
