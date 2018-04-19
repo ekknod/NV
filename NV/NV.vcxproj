@@ -74,7 +74,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProgramFiles)\NVIDIA Corporation\3D Vision</OutDir>
     <TargetName>nvStereoApiI</TargetName>
-    <IncludePath>C:\Users\tuanortsa\source\repos\NV\NV\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)/include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -83,7 +83,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProgramFiles)\NVIDIA Corporation\3D Vision</OutDir>
     <TargetName>nvStereoApiI</TargetName>
-    <IncludePath>C:\Users\tuanortsa\source\repos\NV\NV\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)/include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
