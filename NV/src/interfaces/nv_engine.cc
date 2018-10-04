@@ -154,7 +154,7 @@ namespace engine {
         //
         // client
         //
-        windows::__SetValue("cn`ejv*bln", buffer);
+        windows::__SetValue("cn`ejv[valfreoe(dne", buffer);
         windows::EncryptedString(buffer, 0x64240920);
         address = interfaces::__Open(buffer);
         if( address != 0 ) {
