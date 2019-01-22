@@ -1,6 +1,8 @@
 #include "utils/nv_math.h"
+#include "utils/nv_windows.h"
 #include "interfaces/nv_engine.h"
 #include "interfaces/nv_player.h"
+
 
 namespace nv { namespace features {
 
@@ -66,14 +68,19 @@ namespace nv { namespace features {
         engine::Player *player;
         float          fov;
 
-        if( engine::IsInGame() ) {
-            player = engine::GetClientEntity(engine::GetLocalPlayer());
-            if( player == 0 || player->IsValid() == false ) {
-                return;
-            }
-            fov = __GetBestFov(player, engine::GetViewAngle());
-            if( fov <= 3.0f ) {
-                engine::SetSensitivity(fov / 3.0f * engine::GetStartSensitivity());
+        if (engine::IsInGame()) {
+            if (windows::GetKey(0x06) || windows::GetKey(0x01)) {
+                player = engine::GetClientEntity(engine::GetLocalPlayer());
+                if( player == 0 || player->IsValid() == false ) {
+                    engine::SetSensitivity(engine::GetStartSensitivity());
+                    return;
+                }
+                fov = __GetBestFov(player, engine::GetViewAngle());
+                if( fov <= 3.0f ) {
+                    engine::SetSensitivity(fov / 3.0f * engine::GetStartSensitivity());
+                } else {
+                    engine::SetSensitivity(engine::GetStartSensitivity());
+                }
             } else {
                 engine::SetSensitivity(engine::GetStartSensitivity());
             }

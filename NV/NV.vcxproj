@@ -23,7 +23,7 @@
     <ProjectGuid>{A3A484A9-A751-4D1F-84AD-DF71268205F0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>NV</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,7 +81,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProgramFiles)\NVIDIA Corporation\3D Vision</OutDir>
     <TargetName>nvStereoApiI</TargetName>
     <IncludePath>$(ProjectDir)/include;$(IncludePath)</IncludePath>
   </PropertyGroup>
